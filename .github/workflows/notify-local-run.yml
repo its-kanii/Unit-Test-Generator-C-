@@ -1,0 +1,11 @@
+name: Trigger Local Unit Test Generation
+
+on:
+  workflow_dispatch:
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify
+        run: echo "Trigger received. Run 'generate_tests.py' on your local machine."
